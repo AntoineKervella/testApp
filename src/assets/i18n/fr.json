@@ -28,6 +28,8 @@
 
   "SETTINGS_PAGE_PROFILE": "Modifier le profil",
 
+  "WELCOME_INTRO": "Le point de départ de votre prochaine app Ionic",
+
   "WELCOME_TITLE": "Bienvenue",
 
   "LOGIN_TITLE": "Connexion",
@@ -44,5 +46,7 @@
 
   "CARDS_TITLE": "Social",
 
-  "SEARCH_TITLE": "Recherche"
+  "SEARCH_TITLE": "Recherche",
+
+  "LOG_OUT": "Deconnexion"
 }

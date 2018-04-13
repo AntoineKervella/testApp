@@ -11,21 +11,24 @@ import { MainPage } from '../pages';
 */
 @IonicPage()
 @Component({
-  selector: 'page-welcome',
-  templateUrl: 'welcome.html'
+  selector: 'page-splashscreen',
+  templateUrl: 'splashscreen.html'
 })
-export class WelcomePage {
+export class SplashscreenPage {
 
   constructor(public navCtrl: NavController, private facebook:FacebookService) {}
 
   ngAfterViewInit() {
-    this.facebook.getStatus().subscribe((connected) => {
-      if(connected){
-        this.navCtrl.push(MainPage);
-      }else{
-        this.navCtrl.push('LoginPage');
-      }
-    })
+    let _self = this;
+    setTimeout(function(){
+      _self.facebook.getStatus().subscribe((connected) => {
+        if(connected){
+          _self.navCtrl.push(MainPage);
+        }else{
+          _self.navCtrl.push('LoginPage');
+        }
+      })
+    }, 1000);
   }
 
   login() {

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { FacebookService } from '../../providers/facebook-service';
 
 import { Settings } from '../../providers/providers';
 
@@ -38,7 +39,8 @@ export class SettingsPage {
     public settings: Settings,
     public formBuilder: FormBuilder,
     public navParams: NavParams,
-    public translate: TranslateService) {
+    public translate: TranslateService,
+    private facebook: FacebookService) {
   }
 
   _buildForm() {
@@ -91,5 +93,11 @@ export class SettingsPage {
 
   ngOnChanges() {
     console.log('Ng All Changes');
+  }
+
+  logout(){
+    this.facebook.logout().subscribe((logout) => {
+      this.navCtrl.push('LoginPage');
+    })
   }
 }

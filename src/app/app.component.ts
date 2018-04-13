@@ -8,19 +8,17 @@ import { FirstRunPage } from '../pages/pages';
 import { Settings } from '../providers/providers';
 
 @Component({
-  template: `<ion-menu [content]="content">
+  template: `<ion-menu type="overlay" [content]="content">
     <ion-header>
       <ion-toolbar>
-        <ion-title>Pages</ion-title>
+        <button ion-button menuToggle>
+          <ion-icon color="green-comwatt" name="close"></ion-icon>
+        </button>
       </ion-toolbar>
     </ion-header>
 
     <ion-content>
-      <ion-list>
-        <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-          {{p.title}}
-        </button>
-      </ion-list>
+      <h3>ZOB</h3>
     </ion-content>
 
   </ion-menu>

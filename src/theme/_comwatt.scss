@@ -1,0 +1,19 @@
+/* Variables */
+$green-comwatt: #8BC53D;
+
+.hidden{
+  display:none;
+}
+
+body{
+  font-family:"Montserrat";
+}
+
+ion-header::after {
+  background-image: none !important;
+}
+ion-navbar{
+  img{
+    margin:10px auto;
+  }
+}

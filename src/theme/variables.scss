@@ -29,7 +29,12 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  green-comwatt: #8BC53D,
+  blue-fb: #4864A3,
+  blue-tw: #3BA5CF,
+  red-gg: #E04A32,
+  blue-li: #007BB7
 );
 
 
@@ -77,3 +82,5 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+
+@import "comwatt";
