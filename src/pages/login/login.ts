@@ -135,7 +135,6 @@ export class LoginPage {
     this.facebook.signInWithGoogle()
       .then(
         (connected) => {
-          console.log(connected);
           if(connected){
             this.navCtrl.push(MainPage);
           }

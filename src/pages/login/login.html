@@ -8,6 +8,7 @@
 
 
 <ion-content>
+  <div class="bg-circle-top"></div>
   <div class="signin-part form-part" #signin>
     <h1 text-center="">Connectez-vous</h1>
     <h2 text-center="">Et affinez vos économies</h2>
@@ -72,5 +73,10 @@
     <p text-center #resetpwlink><a (click)="viewResetPw()">Mot de passe oublié ?</a></p>
     <p text-center class="" #signinlink>Pas encore de compte ? <a (click)="viewSignUp()">S'inscrire</a></p>
     <p text-center class="hidden" #signuplink><a (click)="viewSignIn()">Se connecter</a></p>
+  </div>
+  <div class="rounds">
+    <div class="round1 round"></div>
+    <div class="round2 round"></div>
+    <div class="round3 round"></div>
   </div>
 </ion-content>

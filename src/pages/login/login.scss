@@ -1,12 +1,23 @@
 page-login {
   ion-content.content{
     background-color:#F0F2F1;
+
+    //
+    .scroll-content{
+      overflow:hidden;
+    }
     h1{
       font-weight:100;
+      position: relative;
+      z-index:1;
+      color:#FFF;
     }
     h2{
-      font-weight:100;
+      font-weight:500;
       font-size:16px;
+      position: relative;
+      z-index:1;
+      color:#FFF;
     }
     .signin-part, .signup-part, .reset-part{
       height: 350px;
@@ -33,6 +44,14 @@ page-login {
 
       form{
         $input-height: 60px;
+        ion-list{
+          position: absolute;
+          bottom: 0;
+          top: -110px;
+          margin: auto;
+          height: 220px;
+          width: 100%;
+        }
         ion-item.item{
           background:none;
           border:none;
@@ -71,5 +90,15 @@ page-login {
         }
       }
     }
+    .other-logs{
+      position: absolute;
+      bottom: 10px !important;
+      left: 0;
+      right: 0;
+    }
   }
+}
+
+//IOS Style
+.ios page-login{
 }

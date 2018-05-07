@@ -17,3 +17,58 @@ ion-navbar{
     margin:10px auto;
   }
 }
+
+//Border header IOS
+.header-ios .toolbar-ios:last-child .toolbar-background-ios{
+  border:0;
+}
+
+.rounds{
+  position: absolute;
+  bottom:0;
+  right:0;
+  z-index: -1;
+  .round{
+    display:block;
+    height: 180px;
+    width:180px;
+    border-radius:50%;
+    background-color:#FFF;
+  }
+  .round1{
+    position: absolute;
+    right: -80px;
+    bottom: -70px;
+    z-index: 3;
+  }
+  .round2{
+    background-color:rgba(#EDF6E1, 1);
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    right: -130px;
+    bottom: -100px;
+    z-index: 2;
+  }
+  .round3{
+    background-color:rgba(#E6F3D7, 1);
+    position: absolute;
+    height: 550px;
+    width:550px;
+    right: -120px;
+    bottom: -140px;
+    z-index:1;
+  }
+}
+
+//green background top of page
+.bg-circle-top{
+  position: absolute;
+  background-color: $green-comwatt;
+  border-radius: 50%;
+  height: 200px;
+  width: 120%;
+  left: -10%;
+  top: -100px;
+  z-index: 0;
+}

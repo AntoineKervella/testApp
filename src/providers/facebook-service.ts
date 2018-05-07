@@ -51,8 +51,9 @@ export class FacebookService {
       this.afAuth.authState
         .subscribe(
           user => {
-            this.session = user;
             if (user) {
+              this.session = user;
+              localStorage.setItem('user', JSON.stringify(user));
               observer.next(user);
               observer.complete();
             } else {
@@ -102,6 +103,7 @@ export class FacebookService {
             let token = result.credential.accessToken;
             // The signed-in user info.
             let user = result.user;
+            user.gatoken = token;
             this.session = user;
           }).catch(function(error) {
             // Handle Errors here.

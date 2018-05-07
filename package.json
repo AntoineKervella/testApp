@@ -1,6 +1,6 @@
 {
   "name": "testapp",
-  "version": "0.0.1",
+  "version": "0.0.1a",
   "author": "Ionic Framework",
   "homepage": "http://ionicframework.com/",
   "private": true,
@@ -68,8 +68,8 @@
       "cordova-plugin-console": {}
     },
     "platforms": [
-      "android",
-      "browser"
+      "browser",
+      "android"
     ]
   }
 }

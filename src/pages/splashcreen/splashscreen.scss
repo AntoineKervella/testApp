@@ -1,4 +1,9 @@
 page-splashscreen {
+  //Set no-scroll on page
+  .scroll-content{
+    overflow:hidden;
+  }
+
   .splash-bg {
     position: relative;
     background-color:$green-comwatt;
@@ -25,35 +30,38 @@ page-splashscreen {
       top:5px;
     }
   }
-  .round{
-    display:block;
-    height: 180px;
-    width:180px;
-    border-radius:50%;
-    background-color:#FFF;
-  }
-  .round1{
-    position: absolute;
-    right:-90px;
-    bottom:-90px;
-    z-index:3;
-  }
-  .round2{
-    background-color:rgba(#FFF, .3);
-    position: absolute;
-    height: 300px;
-    width:300px;
-    right:-110px;
-    bottom:-110px;
-    z-index:2;
-  }
-  .round3{
-    background-color:rgba(#FFF, .1);
-    position: absolute;
-    height: 550px;
-    width:550px;
-    right:-90px;
-    bottom:-160px;
-    z-index:1;
+  .rounds{
+    position: unset;
+    .round{
+      display:block;
+      height: 180px;
+      width:180px;
+      border-radius:50%;
+      background-color:#FFF;
+    }
+    .round1{
+      position: absolute;
+      right: -80px;
+      bottom: -70px;
+      z-index: 3;
+    }
+    .round2{
+      background-color:rgba(#FFF, .3);
+      position: absolute;
+      height: 350px;
+      width: 350px;
+      right: -130px;
+      bottom: -100px;
+      z-index: 2;
+    }
+    .round3{
+      background-color:rgba(#FFF, .1);
+      position: absolute;
+      height: 550px;
+      width:550px;
+      right: -120px;
+      bottom: -140px;
+      z-index:1;
+    }
   }
 }
